@@ -40,20 +40,19 @@ public class AddTwoNumbers {
     }
 
     static void printArray(int[] digits) {
-        System.out.print("[");
         int len = digits.length;
         len = len - ((digits[len-1] == 0) ? 1 : 0);
+        System.out.print("[");
         for(int i=0; i<len; i++)
             System.out.print(digits[i] + ((i != len-1) ? ", " : ""));
         System.out.println("]");
     }
 
     static void getNumber(int[] digits) {
-        for(int idx = digits.length-1; idx >= 0; idx--) {
-            if(idx == digits.length-1 && digits[idx] == 0)
-                continue;
+        int len = digits.length;
+        len = len - (digits[len-1] == 0) ? 1 : 0;
+        for(int idx = digits.length-1; idx >= 0; idx--)
             System.out.print(digits[idx]);
-        }
         System.out.println();
     }
 
