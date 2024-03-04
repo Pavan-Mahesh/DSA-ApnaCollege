@@ -50,7 +50,7 @@ public class AddTwoNumbers {
 
     static void getNumber(int[] digits) {
         int len = digits.length;
-        len = len - (digits[len-1] == 0) ? 1 : 0;
+        len = len - ((digits[len-1] == 0) ? 1 : 0);
         for(int idx = len-1; idx >= 0; idx--)
             System.out.print(digits[idx]);
         System.out.println();
