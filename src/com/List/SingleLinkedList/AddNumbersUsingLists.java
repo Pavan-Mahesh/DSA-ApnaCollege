@@ -1,5 +1,7 @@
 package com.List.SingleLinkedList;
+
 import java.util.Scanner;
+
 public class AddNumbersUsingLists {
     private static class ListNode {
         private final int data;
@@ -46,13 +48,22 @@ public class AddNumbersUsingLists {
     void displayNumber(ListNode current) {
         if (current != null) {
             displayNumber(current.next);
-            System.out.print(" --> " + current.data);
+            System.out.print(current.data);
         }
     }
-    void display() {
-        System.out.print("tail");
+    void displayNumber() {
         displayNumber(this.head);
-        System.out.println("\n");
+        System.out.println();
+    }
+
+    void display() {
+        ListNode current = this.head;
+        System.out.print("head");
+        while(current != null) {
+            System.out.print(" --> " + current.data);
+            current = current.next;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -61,20 +72,24 @@ public class AddNumbersUsingLists {
         int a = input.nextInt();
         System.out.print("Enter second number: ");
         int b = input.nextInt();
+        System.out.println();
 
         AddNumbersUsingLists num1 = new AddNumbersUsingLists();
         num1.makeList(a);
         AddNumbersUsingLists num2 = new AddNumbersUsingLists();
         num2.makeList(b);
 
-        System.out.println("num1:");
+        System.out.println("num1: " + a);
         num1.display();
-        System.out.println("num2:");
+        System.out.println();
+        System.out.println("num2: " + b);
         num2.display();
+        System.out.println();
 
         AddNumbersUsingLists result = new AddNumbersUsingLists();
         result.addTwoNumbers(num1.head, num2.head);
-        System.out.println("result:");
+        System.out.print("result: ");
+        result.displayNumber();
         result.display();
     }
 }
