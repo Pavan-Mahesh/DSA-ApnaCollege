@@ -1,4 +1,6 @@
-package com.HomeWork.Day4_Pattern;
+// 6-9-24
+
+package com.Day4_Pattern;
 
 public class HollowDiamond {
 
