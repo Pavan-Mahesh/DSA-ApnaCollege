@@ -1,6 +1,6 @@
 // 9-9-24
 
-package com.Day6_BinaryNumberSystem;
+package Day006_BinaryNumberSystem;
 
 public class Conversion {
     static int decimalToBinary(int decNumb) {

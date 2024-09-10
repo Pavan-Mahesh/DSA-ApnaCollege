@@ -1,6 +1,6 @@
 // 7-9-24
 
-package com.Day5_Functions;
+package Day005_Functions;
 
 public class PrimeFrom2toN {
     static void printPrimes(int numb) {

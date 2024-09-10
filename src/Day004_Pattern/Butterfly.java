@@ -1,6 +1,6 @@
 // 6-9-24
 
-package com.Day4_Pattern;
+package Day004_Pattern;
 
 public class Butterfly {
     public static void main(String[] args) {

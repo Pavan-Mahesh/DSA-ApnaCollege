@@ -1,4 +1,4 @@
-package com.Day6_BinaryNumberSystem;
+package Day006_BinaryNumberSystem;
 
 import java.util.Arrays;
 
