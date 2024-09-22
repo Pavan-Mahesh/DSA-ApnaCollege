@@ -1,0 +1,5 @@
+What is arraylist?:
+https://youtu.be/liFyhzZl9uw?feature=shared
+
+Differences between arraylist and vectors in java:
+https://youtu.be/s2h_lYgbkPI?feature=shared
