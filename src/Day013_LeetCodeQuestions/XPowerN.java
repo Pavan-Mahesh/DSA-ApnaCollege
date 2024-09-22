@@ -1,4 +1,4 @@
-package Day012_LeetCodeQuestions;
+package Day013_LeetCodeQuestions;
 
 public class XPowerN {
     static double getPow(double x, int n) {
